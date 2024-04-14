@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 10px;
+}
+
+header{
+    display: grid;
+    align-items: start;
+}
+
+li{
+    list-style-type:none;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
