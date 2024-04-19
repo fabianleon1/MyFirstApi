@@ -1,56 +1,40 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
 
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
-header{
-    display: flex; /* Para mostrarse horizontalmente*/
+header {
+  display: flex; /* Para mostrarse horizontalmente*/
   padding: 15px;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
-    background-color: black;
-    
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  background-color: black;
 }
 
-.logo{
+.logo {
   display: flex;
-
 }
 .logo img {
-  width:64px;
-  height:64px;
+  width: 64px;
+  height: 64px;
+  margin-right: 10px;
+}
+li {
+  list-style-type: none;
 
 }
-li{
-    list-style-type:none;
-}
-a{
-    text-decoration: none;
+a {
+  font-size: 30px;
+  text-decoration: none;
 
-    color: #fff;
-    text-shadow:
-    0 0 7px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px #fff,
-    0 0 82px #fff,
-    0 0 92px #fff,
-    0 0 102px #fff,
-    0 0 151px #fff;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff,
+    0 0 82px #fff, 0 0 92px #fff, 0 0 102px #fff, 0 0 151px #fff;
 }
 .neonText {
   color: #fff;
-  text-shadow:
-  0 0 7px #fff,
-  0 0 10px #fff,
-  0 0 21px #fff,
-  0 0 42px #fff,
-  0 0 82px #fff,
-  0 0 92px #fff,
-  0 0 102px #fff,
-  0 0 151px #fff;
-
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff,
+    0 0 82px #fff, 0 0 92px #fff, 0 0 102px #fff, 0 0 151px #fff;
 }
-
