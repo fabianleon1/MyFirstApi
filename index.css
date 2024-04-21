@@ -26,9 +26,9 @@ li {
 
 }
 a {
-  font-size: 30px;
+  font-size: 20px;
   text-decoration: none;
-
+  margin:5px;
   color: #fff;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff,
     0 0 82px #fff, 0 0 92px #fff, 0 0 102px #fff, 0 0 151px #fff;
@@ -37,4 +37,71 @@ a {
   color: #fff;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff,
     0 0 82px #fff, 0 0 92px #fff, 0 0 102px #fff, 0 0 151px #fff;
+}
+.card-container {
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: center;
+  float:left;
+}
+
+.card {
+  width: 200px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .card {
+    width: calc(100% - 20px);
+  }
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
