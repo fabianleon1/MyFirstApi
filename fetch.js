@@ -1,7 +1,7 @@
 console.log("Hallooo");
 
 var div_usuarios = document.querySelector("#usuarios");
-var div_janet = document.querySelector("#janet");
+
 //peticion al servidor
 
 getUsuarios()
@@ -19,13 +19,13 @@ getUsuarios()
 function getUsuarios() {
   return fetch("https://reqres.in/api/users");
 }
-function getJanet() {
+/* function getJanet() {
   return fetch("https://reqres.in/api/users/2");
-}
+} */
 function listadoUsuarios(usuarios) {
   usuarios.forEach((user, i) => {
-    let cardContainer = document.createElement("div");
-    cardContainer.classList.add("card");
+    let card = document.createElement("div");
+    card.classList.add("card");
 
     // Crear la imagen de avatar
     let avatar = document.createElement("img");
@@ -38,29 +38,33 @@ function listadoUsuarios(usuarios) {
     cardContent.classList.add("card-content");
 
     // Crear el nombre del usuario
-    let nombre = document.createElement("h2");
+    let nombre = document.createElement("h5");
+    nombre.classList.add("card-title");
     nombre.innerHTML = i + 1 + " " + user.first_name + " " + user.last_name;
 
     // Crear el párrafo con el email
     let email = document.createElement("p");
+    email.classList.add("card-text");
+    email.style.fontSize="200";
     email.innerHTML = user.email;
 
     // Agregar elementos al contenido de la tarjeta
     cardContent.appendChild(nombre);
     cardContent.appendChild(email);
 
-    // Agregar la imagen y el contenido de la tarjeta al contenedor de la tarjeta
-    cardContainer.appendChild(avatar);
-    cardContainer.appendChild(cardContent);
+    // Agregar la imagen y el contenido de la tarjeta a la tarjeta
+    card.appendChild(avatar);
+    card.appendChild(cardContent);
 
     // Agregar la tarjeta al contenedor principal
-    div_usuarios.appendChild(cardContainer);
-    document.querySelector(".loading").style.display = "none";
-  
-  });
+    div_usuarios.appendChild(card);
 
+
+    
+  });
+  document.querySelector(".loading").style.display = "none";
 }
-function mostrarJanet(user) {
+/* function mostrarJanet(user) {
   let nombre = document.createElement("h3"); //creando elemento que queramos
   nombre.innerHTML = +" " + user.first_name + " " + user.last_name; //concatenamos a la variable el texto que vamos a meter
   div_janet.appendChild(nombre); //añadimos al div cada usuario
@@ -70,3 +74,4 @@ function mostrarJanet(user) {
   div_janet.appendChild(avatar);
   document.querySelector("#janet .loading").style.display = "none";
 }
+ */

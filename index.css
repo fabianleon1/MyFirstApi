@@ -25,6 +25,10 @@ li {
   list-style-type: none;
 
 }
+a:hover{
+  text-decoration: none;
+  color:white;
+}
 a {
   font-size: 20px;
   text-decoration: none;
@@ -38,7 +42,7 @@ a {
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff,
     0 0 82px #fff, 0 0 92px #fff, 0 0 102px #fff, 0 0 151px #fff;
 }
-.card-container {
+.card-content {
   display: grid;
   flex-wrap: wrap;
   justify-content: center;
@@ -104,4 +108,18 @@ a {
     display: block;
     margin-bottom: 20px;
   }
+}
+.card{
+  display: flex;
+  float:left;
+  width: 200px;
+  height: 320px;
+  
+  
+}
+
+#usuarios{
+  width: 100%;
+  float:left;
+
 }
