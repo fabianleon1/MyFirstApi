@@ -31,7 +31,7 @@ function listadoUsuarios(usuarios) {
     let avatar = document.createElement("img");
     avatar.src = user.avatar;
     avatar.classList.add("card-image");
-    avatar.width = "30";
+    avatar.width = '20';
 
     // Crear el contenido de la tarjeta
     let cardContent = document.createElement("div");
